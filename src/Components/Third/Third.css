@@ -1,0 +1,52 @@
+input{
+    background-color: #f5f7f9;
+}
+.item,.desc{
+    height: 3.3rem;
+    border-radius: 0.5rem;
+    padding: 0.72rem 1.8rem;
+}
+.item::placeholder,.desc::placeholder{
+    font-size: 1.3rem;
+}
+thead{
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+th,td{
+    padding:.72rem .72rem .72rem 0
+}
+.currency-container{
+    padding: .54rem .72rem;
+    background-color: #f5f7f9;
+}
+.currency{
+    font-size: 1.3rem;
+    color: #6c757d;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #6c757d;
+    border-radius: 50%;
+}
+.delete-btn{
+    height: 3.3rem;
+    width: 3.3rem;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 0.8rem;
+}
+tbody > tr{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.add-btn{
+    background-color: #0b5ed7;
+    padding:0.95rem;
+    color: white;
+    font-size:1.3rem;
+    width:7.7rem;
+    height:4rem;
+    font-weight: 600;
+    border-radius: 0.8rem;
+}

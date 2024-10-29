@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  scroll-behavior: smooth;
+  overflow-y:auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+body{
+  overflow-y: hidden;
+}
+.container{
+  height:100vh;
+  background-color: #f2f3f7;
+}
+.form-container{
+  width: 130rem;
+  height: 100%;
+}
+.padding{
+  padding: 0 1.8rem;
+}
+.col1{
+  overflow-y:auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.col1 > div{
+  width: 100%;
+  padding: 4.32rem;
+  margin: 2.16rem 0;
+  border-radius: 1.2rem;
+}
+.col2{
+  margin-top: 2.16rem;
+  padding: 0;
+  /* border-radius: 1.2rem; */
+}
+/* .date > div{
+  height: 6rem;
+  padding: 1.44;
+} */
+ .focus{
+  border:1px solid #0b5ed7;
+ }
+.form-control{
+  height: 3.3rem;
+  max-width: 7rem;
+  padding: .8rem 1.2rem;
+  background-color: #f5f7f9;
+  font-size: 1.3rem;
+}
+
+.hr{
+  margin: 2.16rem 0;
+}
+
+.textarea{
+  height: 3.4rem;
+  background-color: #f5f7f9;
+  padding: 0.72rem 1.8rem;
+  margin: 0.72rem 0;
+}
+
+.textarea::placeholder{
+  font-size: 1.3rem;
+}
+
+.review{
+  padding:0.95rem;
+  height: 3.9rem;
+  border-radius: 0.8rem;
+}
+
+select{
+  appearance: none; /* Remove default arrow */
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 2rem center; /* Position arrow 2rem from right */
+  background-size: 1em;
+  padding-right: 4rem;
+  font-size: 1.3rem;
+  background-color: #ffffff;
+}
+.tax-rate{
+  /* padding: 7.8px 0; */
+  background-color: #ffffff;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+} .tax-rate > input{
+  background-color: #ffffff;
+  height: 3.5rem;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.3rem;
+}
+
+.tax-rate > span{
+  width: 4.1rem;
+  height: 3.5rem;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.modal-container{
+  background-color:rgb(121, 121, 123);
+}
+
+.modal-content{
+  width:79.8rem;
+  height: 43.5rem;
+  background-color: red;
+  border-radius: 1.6rem;
+}
+
+.top-part{
+  height: 10.14rem;
+  padding: 2.16rem;
+  background-color: yellow;
+}
