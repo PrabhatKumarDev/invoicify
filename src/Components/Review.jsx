@@ -1,19 +1,16 @@
 import React from 'react'
-
-const Review = () => {
+import TopPart from './TopPart'
+import SecondPart from './SecondPart'
+import ReviewTable from './ReviewTable'
+import EndPart from './EndPart'
+const Review = ({handleClose}) => {
   return (
-    <div className='modal-container w-screen h-screen flex justify-center items-center'>
+    <div className='modal-container w-screen h-screen flex justify-center items-center' onClick={handleClose}>
         <div className='modal-content'>
-            <div className='top-part flex justify-between'>
-                <div className='flex flex-col'>
-                    <h1>Name</h1>
-                    <h3>Invoice</h3>
-                </div>
-                <div className='flex flex-col'>
-                    <h2>Amount Due:</h2>
-                    <h3>$6</h3>
-                </div>
-            </div>
+            <TopPart />
+            <SecondPart />
+            <ReviewTable/>
+            <EndPart />
         </div>
     </div>
   )

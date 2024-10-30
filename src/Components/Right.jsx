@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 
-const Right = ({setTax,setDiscount,setCurrency,currency}) => {
+const Right = ({setTax,setDiscount,setCurrency,currency,onClick,isFormValid}) => {
   const taxref=useRef(null);
   const calculateTax=(e)=>{
     e.preventDefault();
@@ -10,9 +10,12 @@ const Right = ({setTax,setDiscount,setCurrency,currency}) => {
     e.preventDefault();
     setCurrency(e.target.value);
   }
+  const handleClick=()=>{
+    onClick();
+  }
   return (
     <div className="sticky top-0">
-      <button className='w-full bg-blue-500 h-8 review text-white text-small' >Review Invoice</button>
+      <button className='w-full bg-blue-500 h-8 review text-white text-small' onClick={handleClick} disabled={!isFormValid()}>Review Invoice</button>
       <hr className='w-full hr'/>
       <div className='flex flex-col mb-6'>
         <label className='text-small font-bold mb-3'>Currency</label>

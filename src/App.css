@@ -104,18 +104,88 @@ select{
   border-bottom-right-radius: 0.5rem;
 }
 .modal-container{
-  background-color:rgb(121, 121, 123);
+  background-color:rgba(121, 121, 123, 0.5);
+  position: fixed;
+  z-index: 1000;
 }
 
 .modal-content{
   width:79.8rem;
-  height: 43.5rem;
-  background-color: red;
-  border-radius: 1.6rem;
+  height: 49.8rem;
+  background-color: #ffffff;
+  border-radius: 0.8rem;
 }
 
 .top-part{
   height: 10.14rem;
   padding: 2.16rem;
-  background-color: yellow;
+  background-color: #f8f9fa;
+}
+
+.invoice-from{
+  font-size: 2rem;
+  margin:0.5rem 0;
+}
+.invoice-number{
+  font-size: 1.6rem;
+  color: #6c757d;
+  font-weight: 600;
+}
+.amount-due{
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.amount-due-value{
+  font-size: 2rem;
+  font-weight: 600;
+  color:#6c757d;
+}
+
+.second-part{
+  background-color: #ffffff;
+  padding: 2.16rem;
+  font-size: 1.3rem;
+}
+
+.bill-to-from{
+  width: 33.3%;
+  padding:0 1.08rem;
+}
+.review-table-container{
+  padding: 2.16rem;
+  padding-top: 0;
+}
+.review-table{
+  width: 100%;
+  font-size: 1.3rem;
+}
+.button-container{
+  padding: 2.16rem;
+  padding-top: 0;
+}
+
+.download-btn{
+  background-color: #ffffff;
+  color: #ffffff;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  font-size: 1.3rem;
+  border: 1px solid #0b5ed7;
+}
+.button1{
+  background-color: #0d62e3;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+.button1:hover{
+  background-color: #0b4bab;
+  color: #ffffff;
+}
+.button2{
+  color: #0b5ed7;
+  transition: all 0.3s ease;
+}
+.button2:hover{
+  background-color: #0b5ed7;
+  color: #ffffff;
 }

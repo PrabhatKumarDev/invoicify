@@ -14,6 +14,7 @@ function App() {
   const description = useRef(null);
   const quantity = useRef(null);
   const price = useRef(null);
+  const [review,setReview]=useState(false);
   const [items, setItems] = useState([
     {
       name: "",
@@ -41,7 +42,16 @@ function App() {
     setTotal(total);
   };
   
-  
+  const isFormValid = () => {
+    // Check if there are any items
+    if (items.length === 0) return false;
+    // Check if all items have required fields filled
+    return items.every(item => 
+      item.name.trim() !== '' && 
+      item.description.trim() !== ''
+      
+    );
+  };
 
   const handleDeleteItem = (indexToDelete) => {
     const updatedItems = items.filter((__, index) => index !== indexToDelete);
@@ -54,9 +64,13 @@ function App() {
     setTotal(total);
   };
   console.log(currency);
+  const handleReview=()=>{
+    setReview(true);
+  }
 
   return (
     <>
+    {review && <Review handleClose={()=>setReview(false)} />}
       <div
         className="container
       w-full h-full flex justify-center items-center"
@@ -86,10 +100,11 @@ function App() {
             </div>
           </div>
           <div className="col2 w-1/4 h-full  padding">
-            <Right tax={tax} setTax={setTax} discount={discount} setDiscount={setDiscount} total={total} currency={currency} setCurrency={setCurrency} />
+            <Right tax={tax} setTax={setTax} discount={discount} setDiscount={setDiscount} total={total} currency={currency} setCurrency={setCurrency} onClick={handleReview} isFormValid={isFormValid} />
           </div>
         </form>
       </div>
+      {/* <Review /> */}
     </>
   );
 }
